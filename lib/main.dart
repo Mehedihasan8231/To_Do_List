@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:to_do_list/home.dart';
@@ -21,7 +20,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
 
       ),
-      home: ExtraScreen(),
+      initialRoute: '/extra_screen',
+      routes: {
+        '/extra_screen':(context)=>ExtraScreen(),
+        '/home':(context)=>HomePage(),
+      },
+      //home: ExtraScreen(),
     );
   }
 }

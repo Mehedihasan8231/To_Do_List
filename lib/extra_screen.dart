@@ -30,6 +30,7 @@ class ExtraScreen extends StatelessWidget {
           ),
         ],
       ),
+      floatingActionButton: FloatingActionButton(onPressed: (){Navigator.of(context).pushNamed('/home');},child: Icon(Icons.add),),
     );
   }
 }
