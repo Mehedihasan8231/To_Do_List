@@ -7,6 +7,9 @@ class ExtraScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('Another Screen'),),
+      drawer: Drawer(child: Scaffold(
+        backgroundColor: Colors.black,
+      ),),
       body: Column(
         children: [
           Container(height: MediaQuery.of(context).size.height/8,
